@@ -1,0 +1,255 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<center>\n",
+    "    <img src=\"https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/SN_web_lightmode.png\" width=\"300\" alt=\"cognitiveclass.ai logo\">\n",
+    "</center>\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Add your code below following the instructions given in the course\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Data Science Tools and Ecosystem"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "In this notebook, Data Science Tools and Ecosystem are summarized."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Some of the popular languages that Data Scientists use are:\n",
+      "['Python', 'PHP', 'C', 'C++', 'R']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Some of the popular languages that Data Scientists use are:\")\n",
+    "techs = list((\"Python\", \"PHP\", \"C\", \"C++\", \"R\"))\n",
+    "print(techs)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Some of the commonly used libraries used by Data Scientists include:\n",
+      "['Pandas', 'Seaborn', 'Scikit-learn', 'TensorFlow']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Some of the commonly used libraries used by Data Scientists include:\")\n",
+    "library = list((\"Pandas\", \"Seaborn\", \"Scikit-learn\", \"TensorFlow\"))\n",
+    "print(library)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Data Science Tools\n",
+      "Collecting texttable\n",
+      "  Downloading texttable-1.7.0-py2.py3-none-any.whl.metadata (9.8 kB)\n",
+      "Downloading texttable-1.7.0-py2.py3-none-any.whl (10 kB)\n",
+      "Installing collected packages: texttable\n",
+      "Successfully installed texttable-1.7.0\n",
+      "+-----------------------------------+\n",
+      "|        Data Science Tools         |\n",
+      "+===================================+\n",
+      "| Jupyter Notebook                  |\n",
+      "+-----------------------------------+\n",
+      "| RStudio                           |\n",
+      "+-----------------------------------+\n",
+      "| VS Code (with Python/R extensions |\n",
+      "+-----------------------------------+\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Data Science Tools\")\n",
+    "!pip install texttable\n",
+    "from texttable import Texttable\n",
+    "t = Texttable()\n",
+    "t.add_rows([['Data Science Tools'], ['Jupyter Notebook'], ['RStudio'], ['VS Code (with Python/R extensions']])\n",
+    "print(t.draw())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<h3>Below are a few examples of evaluating arithmetic expressions in Python</h3>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "17"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(3*4)+5 #This a simple arithmetic expression to mutiply then add integers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer:  101\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "101 is an odd number\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = int(input(\"Enter an integer: \"))\n",
+    "if number % 2 == 0:\n",
+    "    print(f\"{number} is an even number.\")\n",
+    "else:\n",
+    "    print(f\"{number} is an odd number\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter Minutes:  200\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3.3333333333333335 hours.\n"
+     ]
+    }
+   ],
+   "source": [
+    "minutes = int(input(\"Enter Minutes: \"))\n",
+    "hours = minutes / 60 # This will convert 200 minutes to hours by diving by 60\n",
+    "print(f\"{hours} hours.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "List popular languages for Data Science"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* arithmetic expressions\n",
+      "* Data Science Tools\n",
+      "* Popular languages\n",
+      "* Common Libraries\n"
+     ]
+    }
+   ],
+   "source": [
+    "ds = list((\"arithmetic expressions\", \"Data Science Tools\", \"Popular languages\", \"Common Libraries\"))\n",
+    "for d in ds:\n",
+    "    print(\"* \" + d)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<h2>Praveen Achanta</h2> Author"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
